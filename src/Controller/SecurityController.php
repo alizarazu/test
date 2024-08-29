@@ -86,7 +86,7 @@ class SecurityController extends AbstractController
 
 
             }catch(\Exception $exception) {
-                $this->addFlash('warning',.$exception->getMessage());
+                
                 return $this->redirectToRoute("app_login");
 
 
